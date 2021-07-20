@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour 
 {
-    public GameObject menu;
     //public bool canPause = false;
 
     //private void Update()
@@ -14,9 +13,13 @@ public class SceneController : MonoBehaviour
     //        MenuOpen();
     //    }
     //}
-    public void Play()
+    public void Level1()
     {
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Level 1");
+    }
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level 2");
     }
     public void Credits()
     {
@@ -25,14 +28,6 @@ public class SceneController : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("Menu");
-    }
-    public void MenuClose()
-    {
-        menu.SetActive(false);
-    }
-    public void MenuOpen()
-    {
-        menu.SetActive(true);
     }
     //public void Resume()
     //{
