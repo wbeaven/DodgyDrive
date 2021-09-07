@@ -33,11 +33,15 @@ public class ProgressTracker : MonoBehaviour
             stars += 1;
             starGot1 = true;
         }
-
         if (StaticData.levelOneSas == 1 && starGot2 == false)
         {
             stars += 1;
             starGot2 = true;
+        }
+        if (StaticData.levelOnePath == 1 && starGot3 == false)
+        {
+            stars += 1;
+            starGot3 = true;
         }
 
         if (stars == 1)
