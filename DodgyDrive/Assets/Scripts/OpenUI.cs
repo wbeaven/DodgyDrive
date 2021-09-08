@@ -8,15 +8,15 @@ public class OpenUI : MonoBehaviour
     public bool isOpen = false;
     public void Both()
     {
-        if (isOpen == false)
-        {
-            element.SetActive(true);
-            isOpen = true;
-        }
-        else
+        if (isOpen)
         {
             element.SetActive(false);
             isOpen = false;
+        }
+        else
+        {
+            element.SetActive(true);
+            isOpen = true;
         }
     }
 }
